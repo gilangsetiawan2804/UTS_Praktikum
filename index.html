@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Toko Buku Gilang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📚 Toko Buku Gilang </h1>
+    <p>Temukan buku favoritmu di sini!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Produk</a></li>
+        <li><a href="#">Pembelian</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<!-- PRODUK -->
+<section>
+    <h2>🔥 Buku Populer</h2>
+    <div class="produk">
+        <div class="card">
+            <h3>The Psychology Of Money </h3>
+            <p>Rp 99.000</p>
+        </div>
+        <div class="card">
+            <h3>Warren Buffet Mindset</h3>
+            <p>Rp 70.000</p>
+        </div>
+        <div class="card">
+            <h3>Is it Bad Or Good Habits</h3>
+            <p>Rp 90.000</p>
+        </div>
+    </div>
+</section>
+
+<!-- FORM -->
+<section>
+    <h2>🛒 Form Pembelian</h2>
+    <form id="formBeli">
+
+        <input type="text" id="nama" placeholder="Nama Lengkap" required>
+        <small id="errorNama"></small>
+
+        <input type="text" id="No Hp" placeholder="Nomer Hp" required>
+        <small id="errorNomerHp"></small>
+
+        <input type="email" id="email" placeholder="Email" required>
+        <small id="errorEmail"></small>
+
+        <input type="number" id="jumlah" placeholder="Jumlah Buku" required>
+        <small id="errorJumlah"></small>
+
+        <select id="buku">
+            <option> The Psychology Of Money </option>
+            <option> Warren Buffet Mindset </option>
+            <option> Is it Bad Or Good Habits</option>
+            <option> Atomic Habits </option>
+        </select>
+
+        <div class="radio">
+            <label><input type="radio" name="metode"> COD</label>
+            <label><input type="radio" name="metode"> Transfer</label>
+        </div>
+
+        <button type="submit">Beli Sekarang</button>
+    </form>
+</section>
+
+<!-- LIST DINAMIS -->
+<section>
+    <h2>📦 Kelola Daftar Buku</h2>
+    <div class="input-group">
+        <input type="text" id="inputItem" placeholder="Tambah buku baru">
+        <button onclick="tambahItem()">Tambah</button>
+    </div>
+    <ul id="listItem"></ul>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Toko Buku Gilang</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
